@@ -1,4 +1,4 @@
-# 화살표 함수에 대한 고찰
+# 화살표 함수에 대한 고찰 - this
 
 ```javascript
 function foo(){
