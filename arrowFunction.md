@@ -48,7 +48,7 @@ console.log(obj2.getValArrow()) // 1356
 console.log(obj.getValArrow()) // 1356
 ```
 
-고민하던 와중에 **globalThis**를 발견했다. setValArrow의 this.val에 커서를 갖다대니 globalThis가 뙇 떴다.
+고민하던 와중에 **globalThis**를 발견했다. setValArrow의 this에 커서를 갖다대니 typeof globalThis가 뙇 떴다.
 
 그리고 출력.
 
