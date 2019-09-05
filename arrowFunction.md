@@ -41,6 +41,11 @@ console.log(obj.getValFunc()) // 111
 const obj2 = new foo()
 console.log(obj2.getValArrow()) // 450
 console.log(obj2.getValFunc()) // 3
+
+
+obj2.setValArrow(1356)
+console.log(obj2.getValArrow()) // 1356
+console.log(obj.getValArrow()) // 1356
 ```
 
 ### 결론
