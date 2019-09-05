@@ -35,7 +35,7 @@ console.log(obj.getValFunc()) // 111
 
 ### 의문점 - 화살표 함수의 this는 무엇을 가리키는 것인가??
 
-마지막줄에 코드를 추가해 테스트를 해봤다.
+코드를 추가해 테스트를 해봤다.
 
 ```javascript
 const obj2 = new foo()
