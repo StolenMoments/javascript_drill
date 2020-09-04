@@ -51,11 +51,26 @@ test.name = "111" 코드가 실행이 됐을 때, 멤버 변수 name이 추가�
 새로운 property가 생성되는 것에 대한 고민을 해봐야겠다.
 
 
-### ES6 Classes 는 어떻게 할 것인가?
+### 클래스는 어떻게 할 것인가?
 
-todo...
+네이밍 컨벤션 (변수명 앞에 언더바 붙이는 식), Symbol, WeakMap 을 사용한 방법이 있었다.
 
+**ES2019** 부터는 '#'을 이용해 private member를 정의할 수 있다.
 
+```javascript
+class Person {
+    #name; // 안해주면 에러 발생 (Private field '#name' must be declared in an enclosing class)
+    constructor() {
+        this.#name = "NAME";
+    }
+
+    getName() {
+        return this.#name;
+    }
+}
+
+console.log(new Person().getName()); // "NAME"
+```
 
 
 
@@ -68,3 +83,5 @@ https://gomugom.github.io/how-to-make-private-member/
 http://chanlee.github.io/2013/12/10/understand-javascript-closure/
 
 http://javascriptissexy.com/understand-javascript-closures-with-ease/
+
+https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Classes/Private_class_fields
