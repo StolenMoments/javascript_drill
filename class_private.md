@@ -1,6 +1,8 @@
 # 자바스크립트 private member 고찰
 
-자바스크립트는 기본적으로 private member를 제공하지 않는다.
+~자바스크립트는 기본적으로 private member를 제공하지 않는다.~
+
+ES2019 부터 private class field 를 제공한다.
 
 그렇다면 멤버 변수를 메서드로만 변화를 줄 수 있게끔 만들고 싶은데 어떻게 하나..?
 <br><br>
