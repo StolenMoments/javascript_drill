@@ -72,8 +72,8 @@ class Person {
 }
 
 console.log(new Person().getName()); // "NAME"
+console.log(new Person().#name); // 에러 발생 (Private field '#name' must be declared in an enclosing class)
 ```
-
 
 
 
